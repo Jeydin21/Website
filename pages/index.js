@@ -23,16 +23,16 @@ function Home() {
 
         <link rel="icon" href="/favicon.ico" type="image/png" />
 
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
 
       <div className="bg-light-background dark:bg-dark-background flex flex-col min-h-screen justify-center text-center">
-        <div className="sm:text-sm md:text-base lg:text-lg xl:text-xl">
-          <div className="text-light-text dark:text-dark-text font-semibold text-[3.75em]">Hello, I'm Jeydin!</div>
-          <div className="text-light-text dark:text-dark-text mt-20 mb-10 text-2xl font-light text-[1.5rem]">Student | Anime Enjoyer | Linux Enthusiast
+        <div>
+          <div className="text-light-text dark:text-dark-text font-semibold text-4xl sm:text-7xl">Hello, I'm Jeydin!</div>
+          <div className="text-light-text dark:text-dark-text font-extralight text-xl sm:text-3xl m-5">Student | Anime Enjoyer | Linux Enthusiast
           </div>
           <div className="flex flex-row justify-center text-light-buttons dark:text-dark-buttons">
             <a className="no-underline" target="_blank" href="mailto:jeydin@j21.dev">
