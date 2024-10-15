@@ -7,7 +7,7 @@ function Home() {
     <MainLayout>
       <div className="flex flex-col min-h-screen justify-center items-center text-center space-y-5">
         <Image
-          src="/elaina.png"
+          src="/favicon.png"
           alt="Jeydin"
           width={200}
           height={200}
