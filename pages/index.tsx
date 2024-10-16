@@ -1,5 +1,5 @@
 import MainLayout from "@/components/layout/MainLayout";
-import ButtonsContainer from "@/components/landing/ButtonsContainer";
+import ButtonsContainer from "@/components/buttons/ButtonsContainer";
 
 export default function Home() {
   return (

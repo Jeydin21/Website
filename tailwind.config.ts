@@ -21,6 +21,10 @@ const config: Config = {
           buttons: '#dd7878',
           highlight: '#f0f0f0'
         }
+      },
+      backgroundImage: {
+        'hero-pattern': "url('/img/hero-pattern.svg')",
+        'footer-texture': "url('/img/footer-texture.png')",
       }
     }
   },
