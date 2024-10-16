@@ -22,7 +22,7 @@ export default function Landing() {
               Hi, I'm Jeydin!
             </h1>
             <p className="mt-6 text-lg leading-8 text-light-text dark:text-dark-text">
-              I'm a Linux enthusiast and I hate Windows. I love developing things related to anime or games, and I'm always open to collaborating on projects and innovative ideas.
+              I'm a Linux enthusiast and I hate Windows. I love creating websites and cool user interfaces, and I'm always open to collaborating on projects and innovative ideas.
             </p>
             <ButtonsContainer />
           </div>

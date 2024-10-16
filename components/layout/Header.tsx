@@ -13,13 +13,14 @@ export default function Header({ navigation, mobileMenuOpen, setMobileMenuOpen }
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+          <a href="#" className="flex items-center">
               <span className="sr-only">Jeydin21</span>
               <img
                 alt=""
                 src="/favicon.png"
-                className="h-8 w-auto rounded-full"
+                className="h-10 w-auto rounded-full"
               />
+              <span className="ml-2 text-xl font-semibold leading-6 text-light-text dark:text-dark-text">Jeydin21</span>
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -32,9 +33,9 @@ export default function Header({ navigation, mobileMenuOpen, setMobileMenuOpen }
               <Bars3Icon aria-hidden="true" className="h-6 w-6" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex lg:gap-x-12 dark:border dark:border-dark-highlight px-10 py-2 rounded-full bg-light-buttons dark:bg-gray-800">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-light-text dark:text-dark-text">
+              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 transition-all text-light-text dark:text-dark-text hover:text-light-text/30 dark:hover:text-dark-text/50">
                 {item.name}
               </a>
             ))}
