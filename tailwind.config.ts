@@ -16,7 +16,7 @@ const config: Config = {
         },
         light: {
           background: '#eff1f5',
-          text: '#4c4f69',
+          text: '#000000',
           buttons: '#dd7878'
         }
       }
