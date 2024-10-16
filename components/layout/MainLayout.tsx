@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { ReactNode } from 'react';
 
-function MainLayout({ children }: { children: ReactNode }) {
+export default function MainLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <Head>
@@ -34,5 +34,3 @@ function MainLayout({ children }: { children: ReactNode }) {
     </>
   );
 }
-
-export default MainLayout;

@@ -1,7 +1,7 @@
 import MainLayout from "@/components/layout/MainLayout";
 import ButtonsContainer from "@/components/landing/ButtonsContainer";
 
-function Home() {
+export default function Home() {
   return (
     <MainLayout>
       <div className="flex flex-col min-h-screen justify-center items-center text-center space-y-5">
@@ -12,5 +12,3 @@ function Home() {
     </MainLayout>
   );
 }
-
-export default Home;
