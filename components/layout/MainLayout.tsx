@@ -1,6 +1,7 @@
 import Head from 'next/head';
+import { ReactNode } from 'react';
 
-function MainLayout({ children }) {
+function MainLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <Head>

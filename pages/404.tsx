@@ -1,5 +1,5 @@
-import MainLayout from '../components/layout/MainLayout';
-import LinkButton from '../components/buttons/LinkButton';
+import MainLayout from '@/components/layout/MainLayout';
+import LinkButton from '@/components/buttons/LinkButton';
 
 function NotFound() {
   return (

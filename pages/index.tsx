@@ -1,5 +1,5 @@
-import MainLayout from "../components/layout/MainLayout";
-import ButtonsContainer from "../components/landing/ButtonsContainer";
+import MainLayout from "@/components/layout/MainLayout";
+import ButtonsContainer from "@/components/landing/ButtonsContainer";
 import Image from "next/image";
 
 function Home() {
