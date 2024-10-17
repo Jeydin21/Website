@@ -10,10 +10,11 @@ const config: Config = {
     extend: {
       colors: {
         dark: {
-          background: '#1e1e2e',
-          text: '#cdd6f4',
+          background: '#2D2E32',
+          background2: '#25262A',
+          text: '#B3A595',
           buttons: '#f2cdcd',
-          highlight: '#42474f'
+          highlight: '#33A652'
         },
         light: {
           background: '#eff1f5',
