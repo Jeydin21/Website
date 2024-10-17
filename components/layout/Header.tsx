@@ -2,14 +2,13 @@ import Link from 'next/link'
 import { FaDownload, FaSun } from 'react-icons/fa6'
 
 interface HeaderProps {
-  navigation: { name: string, href: string }[]
   mobileMenuOpen: boolean
   setMobileMenuOpen: (open: boolean) => void
 }
 
 export default function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
   return (
-    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-gray-600 bg-opacity-90 text-white shadow-xl rounded-full py-3 px-5 z-50 w-[85%] max-w-8xl backdrop-blur-sm">
+    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-gray-700 bg-opacity-90 text-white shadow-xl rounded-full py-3 px-5 z-50 w-[85%] max-w-8xl backdrop-blur-sm">
       <div className="flex justify-between items-center">
         {/* Left section (Logo and name) */}
         <div className="flex items-center space-x-4">

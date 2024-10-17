@@ -10,8 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         dark: {
-          background: '#2D2E32',
-          background2: '#25262A',
+          background: '#27272a',
+          background2: '#18181B',
           text: '#B3A595',
           buttons: '#f2cdcd',
           highlight: '#33A652'
