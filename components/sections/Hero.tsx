@@ -2,7 +2,7 @@ import ButtonsContainer from "@/components/buttons/ButtonsContainer";
 
 export default function Hero() {
   return (
-    <div className="bg-light-background dark:bg-dark-background h-screen relative isolate px-6 pt-14 lg:px-8">
+    <div className="bg-light-background dark:bg-dark-background2 h-screen relative isolate px-6 pt-14 lg:px-8">
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="text-center">
           <h1 className="text-balance text-4xl font-bold tracking-tight text-black dark:text-white sm:text-6xl">
