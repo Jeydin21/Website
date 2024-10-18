@@ -39,5 +39,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+  background-color: #2d2d2d;
 }

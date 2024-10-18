@@ -29,26 +29,28 @@ export default function Landing() {
       <Experience />
 
       {/* Mobile menu */}
-      {mobileMenuOpen && (
-        <>
-          <div className="fixed inset-0 bg-black opacity-50 z-40" onClick={() => setMobileMenuOpen(false)}></div>
-          <div className={`fixed inset-y-0 right-0 z-50 w-64 bg-gray-800 shadow-xl transform transition-transform duration-300 ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-            <button
-              onClick={() => setMobileMenuOpen(false)}
-              className="absolute top-4 right-4 text-gray-300 hover:text-green-500 focus:outline-none"
-            >
-              <FaX className="w-6 h-6" />
-            </button>
-            <div className="flex flex-col items-start p-6 space-y-4 font-extrabold">
-              <Link href="#hero" className="text-gray-300 hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-              <Link href="#about" className="text-gray-300 hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>About</Link>
-              <Link href="#experience" className="text-gray-300 hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Experience</Link>
-              <Link href="#projects" className="text-gray-300 hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
-              <Link href="#contact" className="text-gray-300 hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+      <div className={`fixed inset-0 z-50 flex justify-end ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300`}>
+        {mobileMenuOpen && (
+          <>
+            <div className="fixed inset-0 bg-black opacity-50 z-40" onClick={() => setMobileMenuOpen(false)}></div>
+            <div className="relative bg-gray-800 w-64 h-full shadow-xl z-50">
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                className="absolute top-4 right-4 text-gray-300 hover:text-white focus:outline-none"
+              >
+                <FaX className="w-6 h-6" />
+              </button>
+              <div className="flex flex-col items-start p-6 space-y-4">
+                <Link href="#hero" className="text-gray-300 hover:text-white text-lg" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+                <Link href="#about" className="text-gray-300 hover:text-white text-lg" onClick={() => setMobileMenuOpen(false)}>About</Link>
+                <Link href="#experience" className="text-gray-300 hover:text-white text-lg" onClick={() => setMobileMenuOpen(false)}>Experience</Link>
+                <Link href="#projects" className="text-gray-300 hover:text-white text-lg" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
+                <Link href="#contact" className="text-gray-300 hover:text-white text-lg" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+              </div>
             </div>
-          </div>
-        </>
-      )}
+          </>
+        )}
+      </div>
     </div>
   );
 }
