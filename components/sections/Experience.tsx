@@ -15,9 +15,9 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <div id="experience" className="h-full py-24">
+    <div id="experience" className="h-full pt-24">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-extrabold text-center text-light-text dark:text-white mb-8">
+        <h2 className="text-3xl font-extrabold text-center text-light-text dark:text-white mb-8 underline underline-offset-8">
           My Experiences
         </h2>
         <div className="relative border-l-4 border-blue-500 dark:border-blue-300">

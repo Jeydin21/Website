@@ -3,6 +3,8 @@ import About from "@/components/sections/About";
 import Experience from "@/components/sections/Experience";
 import Skills from "@/components/sections/Skills";
 import Header from "@/components/layout/Header";
+import Projects from "@/components/sections/Projects";
+
 import { useState, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
 import { FaX } from 'react-icons/fa6';
@@ -23,12 +25,13 @@ export default function Landing() {
   };
 
   return (
-    <div className={`relative bg-light-background dark:bg-dark-background2 bg-fixed bg-[linear-gradient(to_right,#0096FF20_1px,transparent_1px),linear-gradient(to_bottom,#0096FF20_1px,transparent_1px)] bg-[size:48px_48px] transition-all`}>
+    <div className={`relative bg-light-background dark:bg-dark-background2 bg-fixed bg-[linear-gradient(to_right,#86cdff15_1px,transparent_1px),linear-gradient(to_bottom,#86cdff15_1px,transparent_1px)] bg-[size:48px_48px] transition-all`}>
       <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} toggleTheme={toggleTheme} />
       <Hero />
       <About />
       <Experience />
       <Skills />
+      <Projects />
 
       {/* Overlay */}
       {mobileMenuOpen && (
@@ -39,14 +42,15 @@ export default function Landing() {
       <div className={`fixed inset-y-0 right-0 z-50 w-64 bg-gray-800 shadow-xl transform transition-transform duration-300 ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <button
           onClick={() => setMobileMenuOpen(false)}
-          className="absolute top-4 right-4 hover:text-green-500focus:outline-none"
+          className="text-white absolute top-4 right-4 hover:text-green-500 focus:outline-none"
         >
           <FaX className="w-6 h-6" />
         </button>
         <div className="flex flex-col items-start p-6 text-white space-y-4 font-extrabold">
-          <Link href="#hero" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+          <Link href="" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Home</Link>
           <Link href="#about" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>About</Link>
           <Link href="#experience" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Experience</Link>
+          <Link href="#skills" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Skills</Link>
           <Link href="#projects" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
           <Link href="#contact" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
         </div>

@@ -25,7 +25,7 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, toggleTheme 
         <div className="flex items-center space-x-3">
           {/* Navigation links */}
           <div className="hidden lg:flex space-x-6 font-extrabold">
-            <Link href="#hero" title='Home' className="hover:text-green-500">Home</Link>
+            <Link href="" title='Home' className="hover:text-green-500">Home</Link>
             <Link href="#about" title='About' className="hover:text-green-500">About</Link>
             <Link href="#experience" title='Experience' className="hover:text-green-500">Experience</Link>
             <Link href="#skills" title='Skills' className="hover:text-green-500">Skills</Link>

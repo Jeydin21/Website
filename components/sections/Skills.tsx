@@ -39,8 +39,8 @@ const skills = {
 
 export default function Skills() {
   return (
-    <div className="p-8">
-      <h2 className="text-3xl font-bold text-gray-100 text-center mb-8">Skills</h2>
+    <div id="skills" className="px-10 md:px-16 py-24">
+      <h2 className="text-3xl font-bold text-gray-100 text-center mb-8 underline underline-offset-8">My Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Frontend and Design Card */}
         <div className="bg-gray-800 p-6 rounded-lg shadow-md">
