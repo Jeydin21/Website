@@ -29,7 +29,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <div className="bg-light-background dark:bg-dark-background transition-all duration-300">
+      <div className="transition-all duration-300">
         {children}
       </div>
     </>
