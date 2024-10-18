@@ -6,18 +6,24 @@ export default function Hero() {
     <div className="h-screen relative isolate px-6 pt-14 lg:px-8">
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="text-center">
-          <h1 className="text-balance text-4xl font-bold tracking-tight text-black dark:text-white sm:text-6xl">
-            Hi, I'm Jeydin!
+          <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+            Hello, I'm{' '}
+            <span className="from-orange-600 to-orange-500 dark:from-orange-700 dark:to-orange-400 mt-10 bg-gradient-to-r bg-clip-text text-center text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl lg:text-6xl">
+              Jeydin
+            </span>{' '}
+            👋
           </h1>
-          <p className="mt-6 text-3xl leading-8 text-black dark:text-white mb-2">
-            I am a{" "}
-            <ReactTyped
-              strings={["student", "developer", "Linux enthusiast", "anime enjoyer"]}
-              typeSpeed={50}
-              backSpeed={40}
-              backDelay={2000}
-              loop
-            />
+          <p className="mt-6 text-4xl leading-8 text-black dark:text-white mb-2">
+            I am a{' '}
+            <span className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-cyan-400 dark:to-cyan-300 ">
+              <ReactTyped
+                strings={["student", "developer", "Linux enthusiast", "frontend developer"]}
+                typeSpeed={50}
+                backSpeed={40}
+                backDelay={2000}
+                loop
+              />
+            </span>
           </p>
           <ButtonsContainer />
         </div>

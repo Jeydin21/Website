@@ -1,14 +1,18 @@
-import MainLayout from "@/components/layout/MainLayout";
-import ButtonsContainer from "@/components/buttons/ButtonsContainer";
+import { useState } from 'react'
+import Header from "@/components/layout/Header";
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Experience from "@/components/sections/Experience";
 
-export default function Home() {
+export default function Landing() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
-    <MainLayout>
-      <div className="flex flex-col min-h-screen justify-center items-center text-center space-y-5">
-        <div className="text-light-text dark:text-dark-text font-semibold text-4xl sm:text-7xl">Hello, I&apos;m Jeydin!</div>
-        <div className="text-light-text dark:text-dark-text font-extralight text-xl sm:text-3xl">Student, Developer, Linux Enthusiast</div>
-        <ButtonsContainer />
-      </div>
-    </MainLayout>
+    <div className="bg-light-background dark:bg-dark-background2 bg-fixed bg-[linear-gradient(to_right,#0096FF20_1px,transparent_1px),linear-gradient(to_bottom,#0096FF20_1px,transparent_1px)] bg-[size:48px_48px] overscroll-contain">
+      <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
+      <Hero />
+      <About />
+      <Experience />
+    </div>
   );
 }

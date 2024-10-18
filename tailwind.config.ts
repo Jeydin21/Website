@@ -12,13 +12,13 @@ const config: Config = {
         dark: {
           background: '#27272a',
           background2: '#18181B',
-          text: '#B3A595',
+          text: '#e5ded6',
           buttons: '#f2cdcd',
           highlight: '#33A652'
         },
         light: {
           background: '#eff1f5',
-          text: '#000000',
+          text: '#2b2926',
           buttons: '#dd7878',
           highlight: '#f0f0f0'
         }

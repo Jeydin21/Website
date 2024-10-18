@@ -24,11 +24,11 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProp
         <div className="flex items-center space-x-3">
           {/* Navigation links */}
           <div className="hidden md:flex space-x-6 font-extrabold">
-            <Link href="/" title='Home' className="hover:text-green-500">Home</Link>
-            <Link href="/about" title='About' className="hover:text-green-500">About</Link>
-            <Link href="/experience" title='Experience' className="hover:text-green-500">Experience</Link>
-            <Link href="/projects" title='Projects' className="hover:text-green-500">Projects</Link>
-            <Link href="/contact" title='Contact' className="hover:text-green-500">Contact</Link>
+            <Link href="" title='Home' className="hover:text-green-500">Home</Link>
+            <Link href="#about" title='About' className="hover:text-green-500">About</Link>
+            <Link href="#experience" title='Experience' className="hover:text-green-500">Experience</Link>
+            <Link href="#projects" title='Projects' className="hover:text-green-500">Projects</Link>
+            <Link href="#contact" title='Contact' className="hover:text-green-500">Contact</Link>
           </div>
 
           {/* CV Download button */}
