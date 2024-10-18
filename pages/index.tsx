@@ -2,6 +2,8 @@ import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Experience from "@/components/sections/Experience";
 import Header from "@/components/layout/Header";
+import Skills from "@/components/sections/Skills";
+
 import { useState, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
 import { FaX } from 'react-icons/fa6';
@@ -27,6 +29,7 @@ export default function Landing() {
       <Hero />
       <About />
       <Experience />
+      <Skills />
 
       {/* Mobile menu */}
       <div className={`fixed inset-0 z-50 flex justify-end ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300`}>

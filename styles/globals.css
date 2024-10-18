@@ -19,7 +19,7 @@
 
 /* Customize scrollbar for Firefox */
 * {
-  scrollbar-width: auto;
+  scrollbar-width: thinw;
   scrollbar-color: rgba(255, 255, 255, 0.5) #2d2d2d; /* Light thumb color on dark track background */
 }
 
@@ -39,6 +39,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   overscroll-behavior: contain;
   background-color: #2d2d2d;
 }
