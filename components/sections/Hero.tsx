@@ -1,4 +1,5 @@
 import ButtonsContainer from "@/components/buttons/ButtonsContainer";
+import { ReactTyped } from "react-typed";
 
 export default function Hero() {
   return (
@@ -8,8 +9,15 @@ export default function Hero() {
           <h1 className="text-balance text-4xl font-bold tracking-tight text-black dark:text-white sm:text-6xl">
             Hi, I'm Jeydin!
           </h1>
-          <p className="mt-6 text-lg leading-8 text-black dark:text-white mb-2">
-            I'm a Linux enthusiast and I hate Windows. I love creating websites and cool user interfaces, and I'm always open to collaborating on projects and innovative ideas.
+          <p className="mt-6 text-3xl leading-8 text-black dark:text-white mb-2">
+            I am a{" "}
+            <ReactTyped
+              strings={["student", "developer", "Linux enthusiast", "anime enjoyer"]}
+              typeSpeed={50}
+              backSpeed={40}
+              backDelay={2000}
+              loop
+            />
           </p>
           <ButtonsContainer />
         </div>

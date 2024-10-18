@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from "@/components/layout/Header";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
+import Experience from "@/components/sections/Experience";
 
 export default function Landing() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -11,6 +12,7 @@ export default function Landing() {
       <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
       <Hero />
       <About />
+      <Experience />
     </div>
   );
 }
