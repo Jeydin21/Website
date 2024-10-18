@@ -47,6 +47,7 @@ export default function Landing() {
                 <Link href="#hero" className="text-gray-300 hover:text-white text-lg" onClick={() => setMobileMenuOpen(false)}>Home</Link>
                 <Link href="#about" className="text-gray-300 hover:text-white text-lg" onClick={() => setMobileMenuOpen(false)}>About</Link>
                 <Link href="#experience" className="text-gray-300 hover:text-white text-lg" onClick={() => setMobileMenuOpen(false)}>Experience</Link>
+                <Link href="#skills" className="text-gray-300 hover:text-white text-lg" onClick={() => setMobileMenuOpen(false)}>Skills</Link>
                 <Link href="#projects" className="text-gray-300 hover:text-white text-lg" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
                 <Link href="#contact" className="text-gray-300 hover:text-white text-lg" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
               </div>

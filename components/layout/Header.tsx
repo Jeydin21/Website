@@ -28,6 +28,7 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, toggleTheme 
             <Link href="#hero" title='Home' className="hover:text-green-500">Home</Link>
             <Link href="#about" title='About' className="hover:text-green-500">About</Link>
             <Link href="#experience" title='Experience' className="hover:text-green-500">Experience</Link>
+            <Link href="#skills" title='Skills' className="hover:text-green-500">Skills</Link>
             <Link href="#projects" title='Projects' className="hover:text-green-500">Projects</Link>
             <Link href="#contact" title='Contact' className="hover:text-green-500">Contact</Link>
           </div>
