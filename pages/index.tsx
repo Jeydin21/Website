@@ -25,7 +25,7 @@ export default function Landing() {
   };
 
   return (
-    <div className={`relative bg-light-background dark:bg-dark-background2 bg-fixed bg-[linear-gradient(to_right,#86cdff15_1px,transparent_1px),linear-gradient(to_bottom,#86cdff15_1px,transparent_1px)] bg-[size:48px_48px] transition-all`}>
+    <div className={`bg-light-background dark:bg-dark-background2 bg-fixed bg-[linear-gradient(to_right,#17b5f930_1px,transparent_1px),linear-gradient(to_bottom,#17b5f930_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#86cdff15_1px,transparent_1px),linear-gradient(to_bottom,#86cdff15_1px,transparent_1px)] bg-[size:48px_48px] transition-all`}>
       <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} toggleTheme={toggleTheme} />
       <Hero />
       <About />
