@@ -4,6 +4,7 @@ import Experience from "@/components/sections/Experience";
 import Skills from "@/components/sections/Skills";
 import Header from "@/components/layout/Header";
 import Projects from "@/components/sections/Projects";
+import MainLayout from "@/components/layout/MainLayout";
 
 import { useState, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
@@ -25,7 +26,7 @@ export default function Landing() {
   };
 
   return (
-    <div className={`bg-light-background dark:bg-dark-background2 bg-fixed bg-[linear-gradient(to_right,#17b5f930_1px,transparent_1px),linear-gradient(to_bottom,#17b5f930_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#86cdff15_1px,transparent_1px),linear-gradient(to_bottom,#86cdff15_1px,transparent_1px)] bg-[size:48px_48px] transition-all`}>
+    <MainLayout>
       <Header mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} toggleTheme={toggleTheme} />
       <Hero />
       <About />
@@ -55,6 +56,6 @@ export default function Landing() {
           <Link href="#contact" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
         </div>
       </div>
-    </div>
+    </MainLayout>
   );
 }

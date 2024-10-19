@@ -1,7 +1,7 @@
 <div align="center">
-<h1>Personal Website</h1>
-</a>
-This is my personal website that is basically horizontal Linktree. You can call it Linkbush if you want.
+
+# Personal Website
+This is my personal website that I created in my senior year of high school for my computer science class.
 <br />
 
 ### Live demo at [j21.dev](https://j21.dev/)
