@@ -7,11 +7,11 @@ import { BiLogoTypescript } from "react-icons/bi";
 const skills = {
   "Frontend and Design": [
     { name: "React.js", icon: <FaReact />, color: "text-cyan-500" },
-    { name: "Next.js", icon: <RiNextjsLine />, color: "text-white" },
+    { name: "Next.js", icon: <RiNextjsLine />, color: "text-black dark:text-white" },
     { name: "HTML", icon: <FaHtml5 />, color: "text-red-500" },
     { name: "CSS", icon: <FaCss3Alt />, color: "text-blue-500" },
     { name: "Tailwind CSS", icon: <RiTailwindCssFill />, color: "text-sky-500" },
-    { name: "Markdown", icon: <FaMarkdown />, color: "text-white" },
+    { name: "Markdown", icon: <FaMarkdown />, color: "text-black dark:text-white" },
   ],
   "Backend": [
     { name: "JavaScript", icon: <FaJsSquare />, color: "text-yellow-400" },
@@ -22,7 +22,7 @@ const skills = {
   ],
   "DevOps": [
     { name: "Visual Studio Code", icon: <SiVisualstudiocode />, color: "text-blue-500" },
-    { name: "GitHub", icon: <FaGithub />, color: "text-white" },
+    { name: "GitHub", icon: <FaGithub />, color: "text-black dark:text-white" },
     { name: "Docker", icon: <FaDocker />, color: "text-blue-500" },
     { name: "Vercel", icon: <SiVercel />, color: "text-black" },
     { name: "Netlify", icon: <SiNetlify />, color: "text-cyan-400" },
@@ -40,12 +40,14 @@ const skills = {
 export default function Skills() {
   return (
     <div id="skills" className="px-10 md:px-16 py-24">
-      <h2 className="text-3xl font-bold text-gray-100 text-center mb-8 underline underline-offset-8">My Skills</h2>
+      <div className="mx-auto font-extrabold text-3xl text-center text-light-text dark:text-white mb-8 underline underline-offset-8">
+        My Skills
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Frontend and Design Card */}
-        <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-bold text-gray-100 mb-4">Frontend and Design</h3>
-          <p className="text-gray-400 mb-4">
+        <div className="bg-light-background dark:bg-dark-background p-6 rounded-lg border border-gray-300 shadow-md">
+          <h3 className="text-xl font-bold text-black dark:text-gray-100 mb-4">Frontend and Design</h3>
+          <p className="text-light-text dark:text-dark-text mb-4">
             I enjoy creating visually appealing and user-friendly interfaces. I strive to make the web a more beautiful place.
           </p>
           <div className="flex flex-wrap gap-2 text-[2.5em]">
@@ -58,9 +60,9 @@ export default function Skills() {
         </div>
 
         {/* Backend Card */}
-        <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-bold text-gray-100 mb-4">Backend</h3>
-          <p className="text-gray-400 mb-4">
+        <div className="bg-light-background dark:bg-dark-background p-6 rounded-lg border border-gray-300 shadow-md">
+          <h3 className="text-xl font-bold text-black dark:text-gray-100 mb-4">Backend</h3>
+          <p className="text-light-text dark:text-dark-text mb-4">
             I love problem-solving and building complex programs. I seek to create scalable, reliable, and secure solutions.
           </p>
           <div className="flex flex-wrap gap-2 text-[2.5em]">
@@ -73,9 +75,9 @@ export default function Skills() {
         </div>
 
         {/* DevOps Card */}
-        <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-bold text-gray-100 mb-4">DevOps</h3>
-          <p className="text-gray-400 mb-4">
+        <div className="bg-light-background dark:bg-dark-background p-6 rounded-lg border border-gray-300 shadow-md">
+          <h3 className="text-xl font-bold text-black dark:text-gray-100 mb-4">DevOps</h3>
+          <p className="text-light-text dark:text-dark-text mb-4">
             I am passionate about automating workflows and ensuring smooth deployments. I aim to bridge the gap between development and operations.
           </p>
           <div className="flex flex-wrap gap-2 text-[2.5em]">
@@ -88,10 +90,10 @@ export default function Skills() {
         </div>
 
         {/* Additional Card (if needed) */}
-        <div className="bg-gray-800 p-6 rounded-lg shadow-md">
-          <h3 className="text-xl font-bold text-gray-100 mb-4">Additional Skills</h3>
-          <p className="text-gray-400 mb-4">
-            Here are some additional skills that I have acquired over time.
+        <div className="bg-light-background dark:bg-dark-background p-6 rounded-lg border border-gray-300 shadow-md">
+          <h3 className="text-xl font-bold text-black dark:text-gray-100 mb-4">Miscellaneous Skills</h3>
+          <p className="text-light-text dark:text-dark-text mb-4">
+            Here are some additional skills that I have acquired over time. I learned these in my free time to become a more well-rounded developer.
           </p>
           <div className="flex flex-wrap gap-2 text-[2.5em]">
             {skills["Additional"].map((skill, index) => (

@@ -34,17 +34,18 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, toggleTheme 
           </div>
 
           {/* CV Download button */}
-          <Link
-            className='flex flex-row items-center border-2 border-green-500 bg-gray-800/95 text-white px-4 py-2 rounded-full'
-            href="/Resume.pdf"
+          <a
+            className='flex flex-row transition-all duration-300 items-center border-2 border-green-500 hover:bg-green-500 bg-gray-800/95 text-white px-4 py-2 rounded-full'
+            href="/Jeydin-Pham.pdf"
+            download
             title='Download CV'
           >
             <p className="hidden lg:block">Download CV</p>
-            <span className='ml-1'><i><FaDownload /></i></span>
-          </Link>
+            <span className='lg:ml-1'><i><FaDownload /></i></span>
+          </a>
 
           {/* Theme toggle button */}
-          <button onClick={toggleTheme} title='Toggle theme' className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full">
+          <button onClick={toggleTheme} title='Toggle theme' className="transition-all p-3 bg-gray-800 hover:bg-gray-500 rounded-full">
             <span>
               <i className='w-5 h-5 dark:hidden'>
                 <FaSun />
