@@ -5,6 +5,7 @@ import Skills from "@/components/sections/Skills";
 import Header from "@/components/layout/Header";
 import Projects from "@/components/sections/Projects";
 import MainLayout from "@/components/layout/MainLayout";
+import Contact from "@/components/sections/Contact";
 
 import { useState, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
@@ -33,6 +34,7 @@ export default function Landing() {
       <Experience />
       <Skills />
       <Projects />
+      <Contact />
 
       {/* Overlay */}
       {mobileMenuOpen && (
