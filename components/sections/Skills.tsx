@@ -39,7 +39,7 @@ const skills = {
 
 export default function Skills() {
   return (
-    <div id="skills" className="px-10 md:px-16 py-24">
+    <div id="skills" className="px-10 md:px-16 pt-24">
       <div className="mx-auto font-extrabold text-3xl text-center text-light-text dark:text-white mb-8 underline underline-offset-8">
         My Skills
       </div>

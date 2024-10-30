@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Projects from "@/components/sections/Projects";
 import MainLayout from "@/components/layout/MainLayout";
 import Contact from "@/components/sections/Contact";
+import Footer from "@/components/layout/Footer";
 
 import { useState, useEffect } from 'react';
 import { useCookies } from 'react-cookie';
@@ -35,6 +36,7 @@ export default function Landing() {
       <Skills />
       <Projects />
       {/* <Contact /> */}
+      <Footer />
 
       {/* Overlay */}
       {mobileMenuOpen && (
