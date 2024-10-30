@@ -15,12 +15,6 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
-  };
-
   return (
     <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
@@ -29,12 +23,18 @@ const Contact = () => {
             Contact Me
           </h2>
         </div>
-        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+        <form className="mt-8 space-y-6" action="https://formsubmit.co/jeydin@j21.dev" method="POST" target="_blank">
           <div className="rounded-md shadow-sm space-y-3">
             <div>
               <label htmlFor="name" className="sr-only">
                 Name
               </label>
+              <input type="hidden" name="_template" value="table" />
+              <input type="text" name="_honey" className='hidden' />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://j21.dev"></input>
+              <input type="hidden" name="_autoresponse" value="Thanks for sending me a message! I'll send a reply within 24 hours." />
+              <input type="hidden" name="_subject" value="You have a new message from j21.dev"></input>
               <input
                 name="name"
                 type="text"

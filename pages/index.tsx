@@ -34,7 +34,7 @@ export default function Landing() {
       <Experience />
       <Skills />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
 
       {/* Overlay */}
       {mobileMenuOpen && (
