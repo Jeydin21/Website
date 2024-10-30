@@ -1,13 +1,13 @@
 import React from 'react';
 import { ReactTyped } from 'react-typed';
 import Link from 'next/link';
-import ButtonsContainer from '@/components/buttons/ButtonsContainer';
+import ButtonsContainer2 from '@/components/buttons/ButtonsContainer2';
 import { SlMouse } from "react-icons/sl";
 
 export default function Hero() {
   return (
     <div className="h-screen flex flex-col justify-center items-center relative">
-      <div className="text-center">
+      <div className="text-center space-y-5">
         <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
           Hello, I'm{' '}
           <span className="from-orange-600 to-orange-500 dark:from-orange-700 dark:to-orange-400 mt-10 bg-gradient-to-r bg-clip-text text-center text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl lg:text-6xl">
@@ -28,7 +28,7 @@ export default function Hero() {
             />
           </span>
         </p>
-        <ButtonsContainer />
+        <ButtonsContainer2 />
       </div>
       <div className="absolute bottom-10 flex justify-center w-full">
         <div className="animate-bounce text-gray-900 dark:text-gray-100">
