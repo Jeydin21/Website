@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactTyped } from 'react-typed';
 import Link from 'next/link';
-import ButtonsContainer2 from '@/components/buttons/ButtonsContainer2';
+import ButtonsContainer2 from '@/components/buttons/ButtonsContainer';
 import { SlMouse } from "react-icons/sl";
 
 export default function Hero() {
