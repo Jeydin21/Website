@@ -5,7 +5,6 @@ import Skills from "@/components/sections/Skills";
 import Header from "@/components/layout/Header";
 import Projects from "@/components/sections/Projects";
 import MainLayout from "@/components/layout/MainLayout";
-import Contact from "@/components/sections/Contact";
 import Footer from "@/components/layout/Footer";
 
 import { useState, useEffect } from 'react';
@@ -35,7 +34,6 @@ export default function Landing() {
       <Experience />
       <Skills />
       <Projects />
-      {/* <Contact /> */}
       <Footer />
 
       {/* Overlay */}
@@ -57,7 +55,6 @@ export default function Landing() {
           <Link href="#experience" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Experience</Link>
           <Link href="#skills" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Skills</Link>
           <Link href="#projects" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
-          {/* <Link href="#contact" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Contact</Link> */}
         </div>
       </div>
     </MainLayout>
