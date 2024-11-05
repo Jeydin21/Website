@@ -3,6 +3,7 @@ import { FaReact, FaHtml5, FaCss3Alt, FaMarkdown, FaJsSquare, FaNodeJs, FaPython
 import { RiNextjsLine, RiTailwindCssFill, RiFirebaseFill } from "react-icons/ri";
 import { SiVisualstudiocode, SiVercel, SiNeovim, SiNetlify, SiArchlinux } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
 const skills = {
   "Frontend and Design": [
@@ -33,17 +34,18 @@ const skills = {
     { name: "Arch Linux", icon: <SiArchlinux />, color: "text-blue-500" },
     { name: "Neovim", icon: <SiNeovim />, color: "text-green-500" },
     { name: "Windows", icon: <FaWindows />, color: "text-blue-300" }
-
   ]
 };
 
 export default function Skills() {
+  const [ref, isVisible] = useIntersectionObserver();
+
   return (
     <div id="skills" className="px-10 md:px-16 pt-24">
       <div className="mx-auto font-extrabold text-3xl text-center text-light-text dark:text-white mb-8 underline underline-offset-8">
         My Skills
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div ref={ref} className={`grid grid-cols-1 md:grid-cols-2 gap-8 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         {/* Frontend and Design Card */}
         <div className="bg-light-background dark:bg-dark-background p-6 rounded-lg border border-gray-300 shadow-md">
           <h3 className="text-xl font-bold text-black dark:text-gray-100 mb-4">Frontend and Design</h3>

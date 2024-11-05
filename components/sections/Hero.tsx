@@ -1,12 +1,15 @@
 import React from 'react';
 import { ReactTyped } from 'react-typed';
 import Link from 'next/link';
-import ButtonsContainer2 from '@/components/buttons/ButtonsContainer';
+import ButtonsContainer from '@/components/buttons/ButtonsContainer';
 import { SlMouse } from "react-icons/sl";
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
 export default function Hero() {
+  const [ref, isVisible] = useIntersectionObserver();
+
   return (
-    <div className="h-screen flex flex-col justify-center items-center relative">
+    <div ref={ref} className={`h-screen flex flex-col justify-center items-center relative transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       <div className="text-center space-y-5">
         <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
           Hello, I'm{' '}
@@ -28,12 +31,12 @@ export default function Hero() {
             />
           </span>
         </p>
-        <ButtonsContainer2 />
+        <ButtonsContainer />
       </div>
       <div className="absolute bottom-10 flex justify-center w-full">
         <div className="animate-bounce text-gray-900 dark:text-gray-100">
           <Link href="#about">
-          <SlMouse className="w-8 h-8" />
+            <SlMouse className="w-8 h-8" />
           </Link>
         </div>
       </div>

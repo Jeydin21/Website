@@ -1,14 +1,16 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
 interface Project {
-  [x: string]: any;
   title: string;
   description: string;
   link: string;
   image: string;
   owner: string;
   repo: string;
+  stars?: number;
+  forks?: number;
 }
 
 export default function Projects() {
@@ -72,12 +74,14 @@ export default function Projects() {
     fetchRepoData();
   }, []);
 
+  const [ref, isVisible] = useIntersectionObserver();
+
   return (
     <div id="projects" className="py-24 h-full relative isolate px-6 lg:px-8">
       <div className="mx-auto font-extrabold text-3xl text-center text-light-text dark:text-white mb-8 underline underline-offset-8">
         Projects
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div ref={ref} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         {projectData.map((project, index) => (
           <div key={index} className="flex flex-col p-6 bg-white dark:bg-dark-background rounded-lg shadow-md">
             <Link href={project.link} target='_blank'>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
 const experiences = [
   {
@@ -21,18 +22,25 @@ export default function Experience() {
           My Experiences
         </h2>
         <div className="relative border-l-4 border-blue-500 dark:border-blue-300">
-          {experiences.map((experience, index) => (
-            <div key={index} className="mb-8 ml-6 border border-gray-300 dark:border-hidden rounded-md">
-              <div className="absolute w-6 h-6 mt-10 bg-blue-500 dark:bg-blue-300 rounded-full -left-3.5 border-4 border-light-background dark:border-dark-background2"></div>
-              <div className="bg-light-background dark:bg-dark-background p-4 rounded-lg shadow-lg">
-                <span className="text-sm text-gray-500 dark:text-gray-400">{experience.date}</span>
-                <h3 className="text-xl font-semibold text-light-text dark:text-white">{experience.title}</h3>
-                <p className="text-light-text dark:text-dark-text">{experience.description}</p>
+          {experiences.map((experience, index) => {
+            const [ref, isVisible] = useIntersectionObserver();
+            return (
+              <div
+                key={index}
+                ref={ref}
+                className={`mb-8 ml-6 border border-gray-300 dark:border-hidden rounded-md transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+              >
+                <div className="absolute w-6 h-6 mt-10 bg-blue-500 dark:bg-blue-300 rounded-full -left-3.5 border-4 border-light-background dark:border-dark-background2"></div>
+                <div className="bg-light-background dark:bg-dark-background p-4 rounded-lg shadow-lg">
+                  <span className="text-sm text-gray-500 dark:text-gray-400">{experience.date}</span>
+                  <h3 className="text-xl font-semibold text-light-text dark:text-white">{experience.title}</h3>
+                  <p className="text-light-text dark:text-dark-text">{experience.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
   );
-};
+}
