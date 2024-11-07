@@ -83,7 +83,7 @@ export default function Projects() {
       </div>
       <div ref={ref} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         {projectData.map((project, index) => (
-          <div key={index} className="flex flex-col p-6 bg-white dark:bg-dark-background rounded-lg shadow-md">
+          <div key={index} className="flex flex-col p-6 bg-white dark:bg-dark-background rounded-lg shadow-md transition-all hover:-translate-y-2">
             <Link href={project.link} target='_blank'>
               <img src={project.image} alt={project.title} className="w-full h-48 object-cover rounded-lg mb-4 dark:border-2 dark:border-white/50 dark:shadow-lg" />
             </Link>
