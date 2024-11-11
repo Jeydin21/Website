@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { ReactNode } from 'react';
+import StarsCanvas from '@/components/layout/StarBackground';
 
 export default function MainLayout({ children }: { children: ReactNode }) {
 
@@ -21,7 +22,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
         <meta property="twitter:title" content="Jeydin21" />
         <meta property="twitter:description" content="My personal landing page made with ❤️" />
         <meta property="twitter:image" content="/favicon.png" />
-        
+
         <link rel="icon" href="/favicon.ico" type="image/png" />
 
         <meta charSet="utf-8" />
