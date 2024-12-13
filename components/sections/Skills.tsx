@@ -47,7 +47,7 @@ export default function Skills() {
       </div>
       <div ref={ref} className={`grid grid-cols-1 md:grid-cols-2 gap-8 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         {/* Frontend and Design Card */}
-        <div className={`bg-light-background dark:bg-dark-background p-6 rounded-lg border border-gray-300 shadow-md transform transition-transform duration-1000 ${isVisible ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className={`bg-light-background dark:bg-dark-background p-6 rounded-lg border border-gray-300 shadow-md `}>
           <h3 className="text-xl font-bold text-black dark:text-gray-100 mb-4">Frontend and Design</h3>
           <p className="text-light-text dark:text-dark-text mb-4">
             I enjoy creating visually appealing and user-friendly interfaces. I strive to make the web a more beautiful place.
@@ -62,7 +62,7 @@ export default function Skills() {
         </div>
 
         {/* Backend Card */}
-        <div className={`bg-light-background dark:bg-dark-background p-6 rounded-lg border border-gray-300 shadow-md transform transition-transform duration-1000 ${isVisible ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className={`bg-light-background dark:bg-dark-background p-6 rounded-lg border border-gray-300 shadow-md`}>
           <h3 className="text-xl font-bold text-black dark:text-gray-100 mb-4">Backend</h3>
           <p className="text-light-text dark:text-dark-text mb-4">
             I love problem-solving and building complex programs. I seek to create scalable, reliable, and secure solutions.
@@ -77,7 +77,7 @@ export default function Skills() {
         </div>
 
         {/* DevOps Card */}
-        <div className={`bg-light-background dark:bg-dark-background p-6 rounded-lg border border-gray-300 shadow-md transform transition-transform duration-1000 ${isVisible ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className={`bg-light-background dark:bg-dark-background p-6 rounded-lg border border-gray-300 shadow-md `}>
           <h3 className="text-xl font-bold text-black dark:text-gray-100 mb-4">DevOps</h3>
           <p className="text-light-text dark:text-dark-text mb-4">
             I am passionate about automating workflows and ensuring smooth deployments. I aim to bridge the gap between development and operations.
@@ -92,7 +92,7 @@ export default function Skills() {
         </div>
 
         {/* Additional Card (if needed) */}
-        <div className={`bg-light-background dark:bg-dark-background p-6 rounded-lg border border-gray-300 shadow-md transform transition-transform duration-1000 ${isVisible ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className={`bg-light-background dark:bg-dark-background p-6 rounded-lg border border-gray-300 shadow-md `}>
           <h3 className="text-xl font-bold text-black dark:text-gray-100 mb-4">Miscellaneous Skills</h3>
           <p className="text-light-text dark:text-dark-text mb-4">
             Here are some additional skills that I have acquired over time. I learned these in my free time to become a more well-rounded developer.
