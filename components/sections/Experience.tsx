@@ -3,14 +3,19 @@ import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
 const experiences = [
   {
-    date: 'June 2020',
-    title: 'Started my first ever coding project',
-    description: 'I began my coding journey in Node.js and Discord.js by creating a Discord bot to solve Kumon math problems during the COVID-19 pandemic.',
+    date: 'August 2021 - Present',
+    title: 'High School Student @ CRHS',
+    description: 'Relevant coursework: AP C.S. Principles, AP C.S. A, KAP Data Structures & Algorithms',
   },
   {
-    date: 'May 2021 - Present',
-    title: 'Cinco Ranch High School',
-    description: 'I am currently a senior at Cinco Ranch High School in Katy, Texas.',
+    date: 'May 2023 - Present',
+    title: 'Teaching and Grading Assitant @ Kumon North America',
+    description: 'Helped with grading assignments and tests, providing constructive feedback to students based on results. Aided in teaching students new concepts and strategies to improve their understanding of the material.',
+  },
+  {
+    date: 'August 2025 - May 2029',
+    title: 'Computer Science Student @ Texas A&M University',
+    description: 'Pursuing a B.S. in Computer Science with a minor in Computer Engineering',
   },
 ];
 
