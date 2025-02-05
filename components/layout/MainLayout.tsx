@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { ReactNode } from 'react';
-import StarsCanvas from '@/components/layout/StarBackground';
 
 export default function MainLayout({ children }: { children: ReactNode }) {
 

@@ -1,7 +1,6 @@
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Experience from "@/components/sections/Experience";
-// import Skills from "@/components/sections/Skills";
 import Header from "@/components/layout/Header";
 import Projects from "@/components/sections/Projects";
 import MainLayout from "@/components/layout/MainLayout";
@@ -32,7 +31,6 @@ export default function Landing() {
       <Hero />
       <About />
       <Experience />
-      {/* <Skills /> */}
       <Projects />
       <Footer />
 
@@ -53,7 +51,6 @@ export default function Landing() {
           <Link href="" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Home</Link>
           <Link href="#about" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>About</Link>
           <Link href="#experience" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Experience</Link>
-          {/* <Link href="#skills" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Skills</Link> */}
           <Link href="#projects" className="hover:text-green-500 text-lg" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
         </div>
       </div>
