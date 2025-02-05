@@ -15,17 +15,19 @@ export default function About() {
       >
         <div className="text-lg leading-8">
           <p>
-            Hi, I'm Jeydin! I'm a passionate developer with a love for Linux and open-source software. I enjoy creating websites and cool user interfaces, and I'm always open to collaborating on projects and innovative ideas.
+            Hi, I'm a computer science and computer engineering student based in Katy, Texas.
+            <br /><br />
+            I'm a tech enthusiast with a love for Linux and open-source software. Creating websites and stylish user interfaces is what I do, and I'm always open to collaboration on projects and innovative ideas.
           </p>
         </div>
         <div className="flex justify-between">
           <div>
-            <h2 className="text-2xl font-bold text-light-text dark:text-white">Hobbies</h2>
+            <h2 className="text-2xl font-bold text-light-text dark:text-white">Hobbies & Activities</h2>
             <ul className="list-disc list-inside mt-2">
-              <li>Coding</li>
-              <li>Watching anime</li>
-              <li>Playing video games</li>
-              <li>Customizing my Ubuntu setup</li>
+              <li>Programming (duh)</li>
+              <li>Binging anime / Reading manga</li>
+              <li>Valorant with my homies</li>
+              <li>Customizing my Ubuntu rice AGAIN</li>
             </ul>
           </div>
         </div>
