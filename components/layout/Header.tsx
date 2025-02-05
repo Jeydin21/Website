@@ -35,8 +35,7 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen, toggleTheme 
           {/* CV Download button */}
           <a
             className='flex flex-row transition-all duration-300 items-center border-2 border-green-500 hover:bg-green-500 bg-gray-800/95 text-white px-4 py-2 rounded-full'
-            href="/Jeydin-Pham.pdf"
-            download
+            href="/Jeydin_Pham_Resume_2025.pdf"
             title='Download CV'
           >
             <p className="hidden lg:block">Download CV</p>

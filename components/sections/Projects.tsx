@@ -77,7 +77,7 @@ export default function Projects() {
   const [ref, isVisible] = useIntersectionObserver();
 
   return (
-    <div id="projects" className="py-24 h-full relative isolate px-6 lg:px-8">
+    <div id="projects" className="py-24 h-full relative isolate px-6 sm:px-24 xl:px-36">
       <div className="mx-auto font-extrabold text-3xl text-center text-light-text dark:text-white mb-8 underline underline-offset-8">
         Projects
       </div>
