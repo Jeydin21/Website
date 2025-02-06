@@ -23,7 +23,7 @@ export default function ButtonsContainer() {
           <FaRegEnvelope />
         </div>
       </a>
-      <a className="no-underline text-red-400" target="_blank" href="/Jeydin-Pham.pdf" download title='Download CV'>
+      <a className="no-underline text-red-400" target="_blank" href="/Jeydin_Pham_Resume_2025.pdf" download title='Download CV'>
         <div className="p-2 duration-300 text-[2em] hover:-translate-y-1.5 hover:scale-105" aria-hidden="true"
           title="Download CV">
           <TbFileCv />

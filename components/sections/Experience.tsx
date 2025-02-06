@@ -14,7 +14,7 @@ const experiences = [
   },
   {
     date: 'August 2025 - May 2029',
-    title: 'Computer Science Student @ Texas A&M University',
+    title: 'Computer Science Student @ The University of Texas at Dallas',
     description: 'Pursuing a B.S. in Computer Science with a minor in Computer Engineering',
   },
 ];
