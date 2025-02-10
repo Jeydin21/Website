@@ -12,10 +12,12 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ name, description, language, languageColor, url, stars }: ProjectCardProps) {
   return (
-    <Link title={name} href={url} target="_blank" rel="noopener noreferrer" className="block border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 duration-300">
-      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{name}</h3>
-      <p className="text-gray-700 dark:text-gray-300 mb-4">{description}</p>
-      <div className="flex items-center justify-between text-gray-600 dark:text-gray-400 mb-4">
+    <Link title={name} href={url} target="_blank" rel="noopener noreferrer" className="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 duration-300 h-44 flex flex-col justify-between">
+      <div>
+        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{name}</h3>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">{description}</p>
+      </div>
+      <div className="flex items-center justify-between text-gray-600 dark:text-gray-400">
         <div className="flex items-center space-x-2">
           <span className={`w-3 h-3 mt-1 rounded-full ${languageColor}`}></span>
           <span>{language}</span>

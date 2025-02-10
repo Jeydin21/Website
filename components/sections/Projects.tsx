@@ -6,7 +6,6 @@ interface Project {
   title: string;
   description: string;
   link: string;
-  image: string;
   owner: string;
   repo: string;
   language?: string;
@@ -29,7 +28,6 @@ export default function Projects() {
       title: "Munchyroll",
       description: "Ad-free anime streaming web app aimed at minimality and responsive design.",
       link: "https://github.com/Jeydin21/Munchyroll",
-      image: "/munchyroll.png",
       owner: "Jeydin21",
       repo: "Munchyroll"
     },
@@ -37,15 +35,13 @@ export default function Projects() {
       title: "Personal Website",
       description: "Personal website I created in my senior year of high school for my computer science class.",
       link: "https://github.com/Jeydin21/Website",
-      image: "/preview.png",
       owner: "Jeydin21",
       repo: "Website"
     },
     {
       title: "Raincheck ☔",
-      description: "Small web app that displays the current weather and forecast in any location in the world.",
+      description: "Raincheck is a web app that displays the weather for any location in the world. ",
       link: "https://github.com/Jeydin21/Raincheck",
-      image: "/raincheck.png",
       owner: "Jeydin21",
       repo: "Raincheck"
     },
@@ -53,17 +49,15 @@ export default function Projects() {
       title: "Tailwind Calculator",
       description: "Simple calculator web app created using Tailwind CSS.",
       link: "https://github.com/Jeydin21/Calculator-App",
-      image: "/calculator.png",
       owner: "Jeydin21",
       repo: "Calculator-App"
     },
     {
       title: "Crypto Comparer",
       description: "Web app created with Flask to compare the prices of two cryptocurrencies. ",
-      link: "https://github.com/Jeydin21/Calculator-App",
-      image: "/crypto.png",
+      link: "https://github.com/Jeydin21/Crypto-Comparer",
       owner: "Jeydin21",
-      repo: "Calculator-App"
+      repo: "Crypto-Comparer"
     }
   ]);
 
