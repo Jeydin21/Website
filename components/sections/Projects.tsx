@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
+import ProjectCard from '../buttons/ProjectsCard';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 
 interface Project {
@@ -9,9 +9,19 @@ interface Project {
   image: string;
   owner: string;
   repo: string;
+  language?: string;
   stars?: number;
   forks?: number;
 }
+
+const languageColors: { [key: string]: string } = {
+  JavaScript: 'bg-[#f0db4f]',
+  TypeScript: 'bg-[#3178c6]',
+  Python: 'bg-[#3572A5]',
+  Java: 'bg-[#b07219]',
+  HTML: 'bg-[#e34c26]',
+  Unknown: 'bg-gray-500'
+};
 
 export default function Projects() {
   const [projectData, setProjectData] = useState<Project[]>([
@@ -65,7 +75,7 @@ export default function Projects() {
         return {
           ...project,
           stars: data.stargazers_count,
-          forks: data.forks_count
+          language: data.language
         };
       }));
       setProjectData(updatedProjects);
@@ -83,18 +93,15 @@ export default function Projects() {
       </div>
       <div ref={ref} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         {projectData.map((project, index) => (
-          <div key={index} className="flex flex-col p-6 bg-white dark:bg-dark-background rounded-lg shadow-md transition-all hover:-translate-y-2">
-            <Link href={project.link} target='_blank'>
-              <img src={project.image} alt={project.title} className="w-full h-48 object-cover rounded-lg mb-4 dark:border-2 dark:border-white/50 dark:shadow-lg" />
-            </Link>
-            <div className="flex-grow">
-              <Link href={project.link} target='_blank' className="text-gray-700 dark:text-gray-300 hover:text-blue-400 text-2xl font-bold mb-2 transition-all">{project.title}</Link>
-              <p className="text-gray-700 dark:text-gray-300">{project.description}</p>
-            </div>
-            {/* <div className='mt-auto self-start text-gray-700 dark:text-gray-300'>
-              {`⭐ ${project.stars} | 🍴 ${project.forks}`}
-            </div> */}
-          </div>
+          <ProjectCard
+            key={index}
+            name={project.title}
+            description={project.description}
+            language={project.language || 'Unknown'}
+            languageColor={languageColors[project.language || 'Unknown']}
+            url={project.link}
+            stars={project.stars || 0}
+          />
         ))}
       </div>
     </div>
